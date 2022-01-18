@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 0px;
+    background-color: #1C1E1D;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+header{
+    background-image: url(./img/headback.jpg);
+    height: 600px;
+    background-position: center;
+    padding: 300px;
+    background-repeat: no-repeat;
+}
+.logo{
+    position: relative;
+}
+.warnings{
+    font-size: 0.75rem;
+    line-height: 1.65;
+    letter-spacing: 0rem;
+}
+.copyright{
+    color: #b3b3b3;
+    font-size: 12px;
+    line-height: 1.2em;
+    grid-area: copyright;
+}
+
+footer{
+    display: grid;
+    max-height: 200px;
+    max-width: 100%;
+    grid-template-columns: 1fr 0.25fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "logo esrb"
+                        "copyright copyright";
+    padding: 60px;
+    
+}
+.esrb{
+    display: grid;
+    grid-template-columns: 57px 57px 2fr;
+    grid-area: esrb;
+    gap: 9px;
+}
+
+.bethlogo{
+    grid-area: logo;
+}
+.esrb img{
+    width: 57px;
+}
+
+hr{
+    width: 2.25rem;
+}
+
+.bodyBG{
+    background-image: url(./img/basegame.webp);
+    background-position-x: right;
+}
+.bodyDB{
+    background-image: url(./img/dragonborn.webp);
+    text-align: right;
+}
+.bodyDG{
+    background-image: url(./img/dawnguard.webp);
+    background-position-x: right;
+}
+.bodyHF{
+    background-image: url(./img/hearthfire.webp);
+    text-align: right;
+}
+
+.center{
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    color: #b3b3b3;
+    padding: 60px;
+    min-height: 366px;
+}
+
+nav{
+    position: fixed;
+    background-color: #1C1E1D;
+    width: 100%;
+    max-height: 61px;
+    padding: 20px;
+    z-index: 1;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+
+}
