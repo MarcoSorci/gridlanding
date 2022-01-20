@@ -84,6 +84,10 @@ hr{
     min-height: 366px;
 }
 
+.center p{
+    width: 50%;
+}
+
 nav{
     position: fixed;
     background-color: #1C1E1D;
